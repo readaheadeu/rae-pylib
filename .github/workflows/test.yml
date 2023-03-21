@@ -1,0 +1,32 @@
+name: "Test Suite"
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  push:
+    branches: [ "main", "wip/**" ]
+
+jobs:
+  unittest:
+    name: "Unittest - ${{ matrix.script }}@py-${{ matrix.py }}/${{ matrix.os }}"
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-latest"]
+        py: ["3.8", "3.x"]
+        script: ["test-mypy", "test-pytest", "test-ruff"]
+
+    steps:
+    - name: "Fetch Sources"
+      uses: actions/checkout@v3
+    - name: "Prepare Python"
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.py }}
+    - name: "Install Hatch"
+      run: pip install --upgrade hatch
+    - name: "Run Script"
+      run: hatch env run -e test ${{ matrix.script }}
+

@@ -1,4 +1,4 @@
-# rae-pylib - Readahead.eu Python Library
+# rae-pylib - Readahead Python Library
 
 ## CHANGES WITH 1.0.0:
 

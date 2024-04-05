@@ -21,9 +21,9 @@ license = "MIT OR Apache-2.0 OR LGPL-2.1-or-later"
 readme = "README.md"
 
 [project.urls]
-Homepage = "https://readahead.eu/lib/rae-pylib"
-Issues = "https://github.com/readaheadeu/rae-pylib/issues"
-Source = "https://github.com/readaheadeu/rae-pylib"
+Homepage = "https://readahead.eu/p/rae-pylib"
+Issues = "https://readahead.eu/p/rae-pylib/issues"
+Source = "https://readahead.eu/p/rae-pylib"
 
 [tool.hatch.build]
 packages = ["src/rae_hetzner"]

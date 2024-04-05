@@ -1,7 +1,4 @@
-rae-hetzner
-===========
-
-API Access to the Hetzner Cloud
+# rae-hetzner - API Access to the Hetzner Cloud
 
 A module with python accessors for the API of the German cloud provider
 Hetzner. Different modules for the individual parts of the API are
@@ -9,8 +6,8 @@ provided.
 
 ### Project
 
- * **Website**: <https://readahead.eu/lib/rae-pylib>
- * **Bug Tracker**: <https://github.com/readaheadeu/rae-pylib/issues>
+ * **Website**: <https://readahead.eu/p/rae-pylib>
+ * **Bug Tracker**: <https://readahead.eu/p/rae-pylib/issues>
 
 ### Requirements
 
